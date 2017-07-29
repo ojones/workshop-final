@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+  .fa-anchor,.fa-coffee {font-size:200px}
+  .project-link,.code-link {display: block;}
+  i.fa {
+    font-size: 64pt;
+    /* you can change #f44336 to whatever color you want */
+    font-color: #f44336!important;
+  }
+  #header-section {
+    /* you can change #f44336 to whatever color you want */
+    background-color: #f44336!important;
+  }
+</style>
+<body>
+
+<!-- Header -->
+<header id="header-section" class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Workshop Portfolio</h1>
+  <p class="w3-xlarge">by {{username}}</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+</header>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa w3-padding-64 w3-text-red w3-margin-right">if</i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Conditionals</h1>
+      <h5 class="w3-padding-32">{{definition of conditonal here}}</h5>
+
+      <p class="w3-text-grey">Conditionals can help a person or computer choose what to do when faced with a decision.  See an example I made here:</p>
+      <a class="project-link" href="https://ojones.github.io/workshop-conditionals/" target="blank">
+        workshop-conditionals
+      </a>
+      <a class="code-link" href="https://github.com/ojones/workshop-conditionals" target="blank">
+        code here
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">That brain of mine is something more than merely mortal, as time will show. – Ada Lovelace</h1>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>For Loops</h1>
+      <h5 class="w3-padding-32">{{definition of for loop here}}</h5>
+
+      <p class="w3-text-grey">For loops can help search through lots of data.  See an example I made here: </p>
+      <a class="project-link" href="https://ojones.github.io/workshop-for-loops/" target="blank">
+        workshop-for-loops
+      </a>
+      <a class="code-link" href="https://github.com/ojones/workshop-for-loops" target="blank">
+        code here
+      </a>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa w3-padding-64 w3-text-red">for</i>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa w3-padding-64 w3-text-red w3-margin-right">&#60;/&#62;</i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Web Apps</h1>
+      <h5 class="w3-padding-32">Web apps written in {{3 web languages here}}</h5>
+
+      <p class="w3-text-grey">Web apps can be deployed to web with Github.  Just go to settings tab and set source for "Github Pages".  See an example I made here:</p>
+      <a class="project-link" href="https://ojones.github.io/workshop-webapp/" target="blank">
+        workshop-webapp
+      </a>
+      <a class="code-link" href="https://github.com/ojones/workshop-webapp" target="blank">
+        code here
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Algorithms</h1>
+      <h5 class="w3-padding-32">{{definition of algorithm here}}</h5>
+
+      <p class="w3-text-grey">Algorithms can help solve huge (or small) problems by breaking solutions down into easy steps.  See an example I made here: </p>
+      <a class="code-link" href="https://github.com/ojones/workshop-algorithm/blob/master/workshop-algorithm/src/components/step.js" target="blank">
+        code here
+      </a>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa w3-padding-64 w3-text-red">steps</i>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
