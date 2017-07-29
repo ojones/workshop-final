@@ -28,7 +28,7 @@
 <header id="header-section" class="w3-container w3-red w3-center" style="padding:128px 16px">
   <h1 class="w3-margin w3-jumbo">Workshop Portfolio</h1>
   <p class="w3-xlarge">by {{username}}</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="buttonHandler()">Free Advice</button>
 </header>
 
 <!-- Second Grid -->
@@ -126,15 +126,10 @@
 </footer>
 
 <script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function buttonHandler() {
+      alert("{{my advice to the next generation}}")
+  }
 </script>
 
 </body>
